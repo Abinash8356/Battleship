@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <script src="./main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="header">Battleship</h1>
+        <div class="game-wrapper">
+            <div class="player"></div>
+            <div class="computer"></div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <h2 class="win">You Won!</h2>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="place-ships-modal">
+        <div class="place-ships-modal-content">
+            <h1 class="ship-placer-header">Drag and drop ships on the board(double click to rotate)</h1>
+            <div class="ship-placer-wrapper">
+                <div class="modal-board"></div>
+                <div class="ships">
+                    <div class="carrier ship horizontal" id="carrier" draggable="true">
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                    </div>
+                    <div class="battleship ship horizontal" id="battleship" draggable="true">
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                    </div>
+                    <div class="cruiser ship horizontal" id="cruiser" draggable="true">
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                    </div>
+                    <div class="submarine ship horizontal" id="submarine" draggable="true">
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                    </div>
+                    <div class="destroyer ship horizontal" id="destroyer" draggable="true">
+                        <div class="ship-squares"></div>
+                        <div class="ship-squares"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="start">start</button>
+        </div>
+    </div>
+</body>
+</html>
